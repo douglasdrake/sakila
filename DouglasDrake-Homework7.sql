@@ -243,3 +243,19 @@ GROUP BY category_id
 ORDER BY `Gross Revenue` DESC
 LIMIT 5;
 
+-- 8a --
+# Create a view of the last query.
+CREATE VIEW `Top Five Genres` AS
+SELECT name, category_id, SUM(amount) as `Gross Revenue` FROM
+payment JOIN (rental JOIN (inventory JOIN (film_category JOIN category USING (category_id)) USING (film_id)) USING (inventory_id)) USING (rental_id)
+GROUP BY category_id
+ORDER BY `Gross Revenue` DESC
+LIMIT 5;
+
+-- 8b --
+# Showing the view we just created:
+SELECT * FROM `Top Five Genres`;
+
+-- 8c --
+# Dropping the view from the database
+DROP VIEW `Top Five Genres`;
