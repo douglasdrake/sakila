@@ -1,4 +1,4 @@
--- Homework 09 - SQL Douglas Drake --
+-- Sample queries from the sakila database that ships with MySQL
 
 USE sakila;
 
