@@ -8,3 +8,4 @@ use the functionality of the Pandas DataFrame to perform the same queries and jo
 requests and results are given in the notebook `python-sakila.ipynb`.
 3.  With SQLAlchemy in Python.  The queries in 1 are performed using SQLAlchemy's Object Relational Mapper and CORE language.  Again, these queries could have been performed using the 'pass-through' option of directly passing 
 SQL statements; however, we choose to demonstrate the use of SQLAlchemy for these tasks.
+These queries are given in `sqlalchemy-sakila.ipynb`.
